@@ -1,9 +1,9 @@
 # Temporary reports
-Bash-Tool/report.txt
-Python-Tool/report.json
+Phase-1/Bash-Tool/report.txt
+Phase-1/Python-Tool/report.json
 
 # Python
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 
