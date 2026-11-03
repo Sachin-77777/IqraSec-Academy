@@ -1,0 +1,84 @@
+Oct 27 09:05:12 kali sshd[1001]: Accepted password for sachin from 192.168.1.20 port 51102 ssh2
+Oct 27 09:05:12 kali sshd[1001]: pam_unix(sshd:session): session opened for user sachin by (uid=0)
+Oct 27 09:08:31 kali systemd-logind[712]: New session 12 of user sachin.
+Oct 27 09:11:40 kali sudo:   sachin : TTY=pts/0 ; PWD=/home/sachin ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 27 09:12:01 kali sshd[1011]: Received signal 15; terminating.
+Oct 27 09:12:03 kali sshd[1012]: Server listening on 0.0.0.0 port 22.
+Oct 27 09:12:03 kali sshd[1012]: Server listening on :: port 22.
+Oct 27 09:13:55 kali cron[688]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 09:14:09 kali sshd[1021]: Invalid user admin from 203.0.113.45 port 51234
+Oct 27 09:14:11 kali sshd[1021]: Failed password for invalid user admin from 203.0.113.45 port 51234 ssh2
+Oct 27 09:14:11 kali sshd[1021]: Connection closed by invalid user admin 203.0.113.45 port 51234 [preauth]
+Oct 27 09:14:19 kali sshd[1023]: Failed password for root from 203.0.113.45 port 51236 ssh2
+Oct 27 09:14:19 kali sshd[1023]: Connection closed by authenticating user root 203.0.113.45 port 51236 [preauth]
+Oct 27 09:14:25 kali sudo:   sachin : TTY=pts/0 ; PWD=/home/sachin ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+Oct 27 09:14:27 kali sshd[1026]: Invalid user oracle from 203.0.113.45 port 51240
+Oct 27 09:14:27 kali sshd[1026]: Failed password for invalid user oracle from 203.0.113.45 port 51240 ssh2
+Oct 27 09:14:31 kali kernel: [ 4122.118337] audit: type=1400 audit(1730020467.118:48): apparmor="ALLOWED"
+Oct 27 09:15:02 kali sshd[1029]: Failed password for root from 203.0.113.45 port 51248 ssh2
+Oct 27 09:15:02 kali sshd[1029]: Connection closed by authenticating user root 203.0.113.45 port 51248 [preauth]
+Oct 27 09:15:11 kali sshd[1033]: Failed password for admin from 203.0.113.45 port 51252 ssh2
+Oct 27 09:15:11 kali sshd[1033]: Connection closed by authenticating user admin 203.0.113.45 port 51252 [preauth]
+Oct 27 09:15:23 kali sshd[1037]: Failed password for root from 203.0.113.45 port 51260 ssh2
+Oct 27 09:15:23 kali sshd[1037]: error: maximum authentication attempts exceeded for root from 203.0.113.45 port 51260 ssh2 [preauth]
+Oct 27 09:15:29 kali sshd[1039]: Disconnected from authenticating user root 203.0.113.45 port 51260 [preauth]
+Oct 27 09:15:38 kali sshd[1041]: Invalid user postgres from 203.0.113.45 port 51266
+Oct 27 09:15:38 kali sshd[1041]: Failed password for invalid user postgres from 203.0.113.45 port 51266 ssh2
+Oct 27 09:16:04 kali systemd[1]: Starting Daily apt download activities...
+Oct 27 09:16:31 kali systemd[1]: Finished Daily apt download activities.
+Oct 27 09:22:15 kali sshd[1052]: Received disconnect from 203.0.113.45 port 51270:11: Bye Bye [preauth]
+Oct 27 09:24:48 kali dbus-daemon[705]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Oct 27 09:31:05 kali sshd[1060]: Invalid user test from 198.51.100.7 port 44812
+Oct 27 09:31:05 kali sshd[1060]: Failed password for invalid user test from 198.51.100.7 port 44812 ssh2
+Oct 27 09:31:14 kali sshd[1062]: Failed password for root from 198.51.100.7 port 44816 ssh2
+Oct 27 09:31:22 kali sshd[1064]: Failed password for admin from 198.51.100.7 port 44820 ssh2
+Oct 27 09:31:31 kali sshd[1066]: Invalid user backup from 198.51.100.7 port 44824
+Oct 27 09:31:31 kali sshd[1066]: Failed password for invalid user backup from 198.51.100.7 port 44824 ssh2
+Oct 27 09:31:44 kali sshd[1068]: Failed password for root from 198.51.100.7 port 44828 ssh2
+Oct 27 09:31:44 kali sshd[1068]: error: maximum authentication attempts exceeded for root from 198.51.100.7 port 44828 ssh2 [preauth]
+Oct 27 09:32:02 kali sshd[1070]: Connection closed by authenticating user root 198.51.100.7 port 44828 [preauth]
+Oct 27 09:35:19 kali sudo:   sachin : TTY=pts/1 ; PWD=/home/sachin ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh
+Oct 27 09:38:00 kali cron[688]: pam_unix(cron:session): session closed for user root
+Oct 27 09:40:33 kali sshd[1082]: Accepted publickey for sachin from 192.168.1.20 port 51488 ssh2: RSA SHA256:8mQ2n4eZ1sV0pXk6tRwY
+Oct 27 09:40:33 kali sshd[1082]: pam_unix(sshd:session): session opened for user sachin by (uid=0)
+Oct 27 09:41:02 kali systemd-logind[712]: New session 15 of user sachin.
+Oct 27 09:44:27 kali sshd[1088]: Received disconnect from 192.168.1.20 port 51488:11: disconnected by user
+Oct 27 09:44:27 kali sshd[1088]: pam_unix(sshd:session): session closed for user sachin
+Oct 27 09:47:13 kali kernel: [ 6084.552011] audit: type=1400 audit(1730022433.552:51): apparmor="DENIED"
+Oct 27 09:50:44 kali sshd[1099]: Invalid user ftpuser from 203.0.113.45 port 51302
+Oct 27 09:52:10 kali sshd[1104]: Accepted password for root from 203.0.113.45 port 51310 ssh2
+Oct 27 09:52:10 kali sshd[1104]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Oct 27 09:52:41 kali sudo:   root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/id
+Oct 27 09:53:02 kali sshd[1108]: Received disconnect from 203.0.113.45 port 51310:11: disconnected by user
+Oct 27 09:53:02 kali sshd[1108]: pam_unix(sshd:session): session closed for user root
+Oct 27 09:55:36 kali systemd[1]: Started Session 16 of user sachin.
+Oct 27 10:02:12 kali sshd[1121]: Invalid user pi from 203.0.113.66 port 39144
+Oct 27 10:02:12 kali sshd[1121]: Failed password for invalid user pi from 203.0.113.66 port 39144 ssh2
+Oct 27 10:02:20 kali sshd[1123]: Failed password for root from 203.0.113.66 port 39148 ssh2
+Oct 27 10:02:20 kali sshd[1123]: Connection closed by authenticating user root 203.0.113.66 port 39148 [preauth]
+Oct 27 10:02:55 kali sshd[1125]: Received disconnect from 203.0.113.66 port 39150:11: Bye Bye [preauth]
+Oct 27 10:03:41 kali packagekitd[901]: uid 1000 is trying to obtain org.freedesktop.packagekit.system
+Oct 27 10:05:01 kali sshd[1133]: Accepted publickey for deploy from 192.168.1.35 port 52610 ssh2: ED25519 SHA256:Kd9vLm3pQw7zRc2bNt5y
+Oct 27 10:05:01 kali sshd[1133]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+Oct 27 10:05:29 kali systemd-logind[712]: New session 18 of user deploy.
+Oct 27 10:06:12 kali sudo:   deploy : TTY=pts/3 ; PWD=/srv/app ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 27 10:08:47 kali sshd[1141]: pam_unix(sshd:session): session closed for user deploy
+Oct 27 10:12:09 kali kernel: [ 7592.338811] audit: type=1400 audit(1730023929.338:52): apparmor="ALLOWED"
+Oct 27 10:15:22 kali dbus-daemon[705]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Oct 27 10:18:33 kali sshd[1152]: Received disconnect from 198.51.100.23 port 47322:11: Bye Bye [preauth]
+Oct 27 10:20:45 kali sshd[1158]: Failed password for admin from 198.51.100.23 port 47330 ssh2
+Oct 27 10:20:45 kali sshd[1158]: Connection closed by authenticating user admin 198.51.100.23 port 47330 [preauth]
+Oct 27 10:24:11 kali cron[688]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 10:24:11 kali CRON[1160]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Oct 27 10:24:11 kali cron[688]: pam_unix(cron:session): session closed for user root
+Oct 27 10:29:52 kali sshd[1171]: Received signal 15; terminating.
+Oct 27 10:29:53 kali sshd[1172]: Server listening on 0.0.0.0 port 22.
+Oct 27 10:31:07 kali systemd[1]: Startup finished in 4.218s (kernel) + 12.884s (userspace) = 17.103s.
+Oct 27 10:33:19 kali sudo:   sachin : TTY=pts/4 ; PWD=/home/sachin ; USER=root ; COMMAND=/usr/bin/less /var/log/auth.log
+Oct 27 10:36:44 kali sshd[1180]: Accepted password for sachin from 192.168.1.20 port 51880 ssh2
+Oct 27 10:36:44 kali sshd[1180]: pam_unix(sshd:session): session opened for user sachin by (uid=0)
+Oct 27 10:41:02 kali systemd-logind[712]: Removed session 18.
+Oct 27 10:45:30 kali sshd[1190]: Received disconnect from 192.168.1.20 port 51880:11: disconnected by user
+Oct 27 10:45:30 kali sshd[1190]: pam_unix(sshd:session): session closed for user sachin
+Oct 27 10:50:15 kali systemd[1]: Starting Rotate log files...
+Oct 27 10:50:16 kali systemd[1]: Finished Rotate log files.

@@ -1,0 +1,12 @@
+# Temporary reports
+Bash-Tool/report.txt
+Python-Tool/report.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS
+.DS_Store
+Thumbs.db

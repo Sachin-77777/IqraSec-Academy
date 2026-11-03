@@ -1,0 +1,60 @@
+Threat Intelligence Note - Campaign "SILENT HARBOR"
+Classification: TLP:AMBER - synthetic sample data, safe to share
+Author: Sachin Shrestha
+Date: 2026-10-27
+
+Executive summary
+-----------------
+Between 12 and 24 October 2026 we tracked a credential-phishing campaign that
+delivered a second-stage loader from a look-alike web host. Victims received an
+invoice-themed e-mail and were asked to "verify" their mailbox before the
+attachment would open.
+
+Delivery and command-and-control
+--------------------------------
+The phishing page was served from http://secure-login.example-bad.test/verify.
+The loader was fetched from http://malware-drop.example-bad.test/payload/stage2.bin.
+A fallback channel polled https://cdn-login.example-bad.test/updates/gate.php
+every 15 minutes, and the same fallback URL was also seen from a second victim.
+Both hosts are fronted by update-server.example-bad.test, which rotated its
+address twice during the campaign. The registrar record for
+update-server.example-bad.test is the strongest pivot we currently have.
+
+Infrastructure
+--------------
+Resolver A (primary C2)   : 203.0.113.45
+Resolver B (backup C2)    : 198.51.100.7
+Secondary scanning source : 203.0.113.66
+Internal jump host in proxy logs : 10.0.10.15
+The staging unit behind the loader also answered on 10.0.10.15, which tells us
+the operator already had a foothold inside the internal network.
+
+Artifacts
+---------
+MD5    of loader : d41d8cd98f00b204e9800998ecf8427e
+SHA256 of loader : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+
+Vulnerabilities abused
+----------------------
+Initial access chained CVE-2021-44228 (Log4Shell) with a weak credential dump.
+CVE-2021-44228 was reused against a second victim one week later.
+A third victim was compromised through CVE-2023-34362 (MOVEit Transfer).
+
+Addresses seen in the lure headers
+----------------------------------
+Sender   : dropbox-agent@example-bad.test
+Reply-to : analyst.help@example-org.test
+
+Repeat sightings
+----------------
+203.0.113.45 was observed again on 21 October.
+203.0.113.45 was observed a third time on 24 October.
+198.51.100.7 reappeared briefly on 26 October.
+https://cdn-login.example-bad.test/updates/gate.php was contacted from two
+separate hosts during the same window.
+
+File names that must NOT be mistaken for hostnames
+--------------------------------------------------
+Attachments  : invoice.txt, notes.md, report.log, config.yaml, archive.zip
+Payload path : payload/stage2.bin
+Scripts      : deploy.sh, cleanup.py
